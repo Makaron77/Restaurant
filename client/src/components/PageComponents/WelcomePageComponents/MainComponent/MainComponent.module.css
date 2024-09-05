@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+.headerDown {
+  position: relative;
+}
+
+.headerTitle {
+  color: #d67e35;
+  font-family: "Tinos", serif;
+  font-size: 50px;
+  font-weight: 400;
+  left: 0;
+  margin-top: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+  height: 250px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.headerTitle Button {
+  margin: 0;
+  margin-top: 20px;
+}
+
+.headerSubtitle {
+  color: #d67e35;
+  font-family: "Tinos", serif;
+  font-size: 80px;
+  font-weight: 400;
+}
+
+.headerSuptitle {
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+.headerSuptitle::after {
+  top: 7px;
+  left: 175px;
+  position: absolute;
+  content: "";
+  width: 61px;
+  height: 2px;
+  background-color: #c4c4c4;
+}
+.headerSuptitle::before {
+  top: 7px;
+  left: -67px;
+  position: absolute;
+  content: "";
+  width: 61px;
+  height: 2px;
+  background-color: #c4c4c4;
+}

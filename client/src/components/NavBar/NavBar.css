@@ -1,23 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-.header__logo {
+.nav__logo {
   margin-right: auto;
 }
 
-.header {
-  background-image: url("/images/bg-header.jpg");
-  height: 100vh;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: fixed;
-  background-position: center;
-}
-
-.header__container {
-  margin: 0 10%;
-}
-
-.header__line {
+.nav {
   padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,13 +13,13 @@
           align-items: center;
 }
 
-.header__list {
+.nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 45px;
 }
-.header__list a {
+.nav__list a {
   text-decoration: none;
   color: #fff;
   font-family: "Open Sans", sans-serif;
@@ -42,22 +28,22 @@
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
 }
-.header__list a:hover {
+.nav__list a:hover {
   color: #d67e35;
 }
-.header__list a:active {
+.nav__list a:active {
   -webkit-transform: scale(0.95);
       -ms-transform: scale(0.95);
           transform: scale(0.95);
 }
 
-.header__basket {
+.nav__basket {
   position: relative;
   border-right: 1px solid #fff;
   margin-left: 10%;
   height: 50px;
 }
-.header__basket .header__basket--svg {
+.nav__basket .nav__basket--svg {
   position: absolute;
   top: 15px;
   right: 40px;
@@ -67,22 +53,22 @@
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
 }
-.header__basket .header__basket--svg:hover {
+.nav__basket .nav__basket--svg:hover {
   fill: #d67e35;
 }
-.header__basket .header__basket--svg:active {
+.nav__basket .nav__basket--svg:active {
   -webkit-transform: scale(0.95);
       -ms-transform: scale(0.95);
           transform: scale(0.95);
 }
 
-.header__contacts {
+.nav__contacts {
   font-family: "Open Sans", sans-serif;
   color: #fff;
   font-size: 14px;
   margin-left: 3%;
 }
-.header__contacts .header__contacts--numPhone {
+.nav__contacts .nav__contacts--numPhone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,23 +78,23 @@
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
 }
-.header__contacts .header__contacts--numPhone:hover .header__contacts--svg {
+.nav__contacts .nav__contacts--numPhone:hover .nav__contacts--svg {
   fill: #d67e35;
   cursor: pointer;
 }
-.header__contacts .header__contacts--numPhone:hover .header__contacts--number a {
+.nav__contacts .nav__contacts--numPhone:hover .nav__contacts--number a {
   color: #d67e35;
 }
-.header__contacts .header__contacts--svg {
+.nav__contacts .nav__contacts--svg {
   width: 30px;
   height: 30px;
   fill: #fff;
 }
-.header__contacts .header__contacts--text {
+.nav__contacts .nav__contacts--text {
   max-width: 155px;
 }
 
-.header__contacts--number a {
+.nav__contacts--number a {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
@@ -117,88 +103,51 @@
           transition-duration: 0.2s;
 }
 
-.header__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 157px;
-  height: 47px;
-  background-color: #ff7400;
-  margin-left: 5%;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
-}
-.header__btn:hover {
-  background-color: #b66a2c;
-}
-.header__btn:active {
-  -webkit-transform: scale(0.95);
-      -ms-transform: scale(0.95);
-          transform: scale(0.95);
-}
-.header__btn a {
-  text-decoration: none;
-  font-family: "Open Sans";
-  font-size: 14px;
-  font-weight: 700;
-  color: #fff;
-}
-
-.header__burgerMenu {
+.nav__burgerMenu {
   display: none;
 }
-.header__burgerMenu:active {
+.nav__burgerMenu:active {
   -webkit-transform: scale(0.95);
       -ms-transform: scale(0.95);
           transform: scale(0.95);
 }
-.header__burgerMenu .header__burgerMenu--svg rect {
+.nav__burgerMenu .nav__burgerMenu--svg rect {
   fill: #ff7400;
 }
 
 @media (max-width: 1200px) {
-  .header__contacts--number {
+  .nav__contacts--number {
     display: none;
   }
-  .header__contacts--text {
+  .nav__contacts--text {
     display: none;
   }
-  .header__list {
+  .nav__list {
     gap: 25px;
     font-size: 12px;
   }
-  .header__btn {
-    width: 123px;
-    height: 37px;
-  }
-  .header__btn a {
-    font-size: 12px;
-  }
-  .header__logo a img {
+  .nav__logo a img {
     width: 75px;
     height: 51px;
   }
 }
 @media (max-width: 785px) {
-  .header__burgerMenu {
+  .nav__btn {
+    display: none;
+  }
+  .nav__burgerMenu {
     display: block;
   }
-  .header__list {
+  .nav__list {
     display: none;
   }
-  .header__basket {
+  .nav__basket {
     display: none;
   }
-  .header__btn {
+  .nav__btn {
     display: none;
   }
-  .header__contacts--svg {
+  .nav__contacts--svg {
     display: none;
   }
 }

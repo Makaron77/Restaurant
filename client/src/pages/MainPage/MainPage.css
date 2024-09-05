@@ -1,0 +1,13 @@
+.container {
+  background-image: url("/images/bg-header.jpg");
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  background-position: center;
+}
+
+.container__welcome {
+  margin: 0 10%;
+}

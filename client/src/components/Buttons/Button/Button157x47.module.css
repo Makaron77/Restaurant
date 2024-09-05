@@ -1,0 +1,55 @@
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 157px;
+  height: 47px;
+  background-color: #ff7400;
+  margin-left: 5%;
+  border: none;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 700;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+.btn:hover {
+  background-color: #b66a2c;
+}
+.btn:active {
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
+}
+.btn--small {
+  width: 137px;
+  height: 47px;
+}
+.btn--medium {
+  width: 157px;
+  height: 47px;
+}
+.btn--large {
+  width: 220px;
+  height: 50px;
+  font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+  .btn {
+    width: 123px;
+    height: 37px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 785px) {
+  .btn {
+    display: none;
+  }
+}

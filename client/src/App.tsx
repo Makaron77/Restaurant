@@ -1,13 +1,14 @@
 import { useState } from 'react';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import WelcomePageComponent from './PageComponents/WelcomePageComponent/WelcomePageComponent';
+import MainPage from './pages/MainPage/MainPage';
+
 
 function App() {
 	return (
 		<>
 			<Routes>
-				<Route path='/' element={<WelcomePageComponent/>}></Route>
+				<Route path='/' element={<MainPage/>}></Route>
 			</Routes>
 		</>
 	);
