@@ -6,6 +6,7 @@ import MainComponent from '../../components/PageComponents/WelcomePageComponents
 export default function MainPage() {
 	return (
 		<div className='container'>
+			
 			<div className='container__welcome'>
 				<NavBar />
 				<MainComponent />

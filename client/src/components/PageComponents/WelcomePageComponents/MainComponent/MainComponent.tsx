@@ -5,7 +5,7 @@ export default function MainComponent() {
 	return (
 		<div className={styles.headerDown}>
 			<div className={styles.headerTitle}>
-				{' '}
+				
 				Добро пожаловать в
 				<div className={styles.headerSubtitle}>Наш ресторан</div>
 			
