@@ -26,6 +26,15 @@
 &--medium {
 	width: 157px;
 	height: 47px;
+	@media (max-width: 1200px) {
+	
+		width: 123px;
+		height: 37px;
+		font-size: 12px;
+
+	
+	
+}
 	@media (max-width: 785px) {
 	
 		display: none;
@@ -40,14 +49,6 @@
 	
 }
 
-@media (max-width: 1200px) {
-	.btn {
-		width: 123px;
-		height: 37px;
-		font-size: 12px;
 
-	
-	}
-}
 
 

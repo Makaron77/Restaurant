@@ -1,16 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-
 .headerDown {
-position: relative;
-// display: flex;
-// flex-direction: column;
-// width: 500px;
-// height: 250px;
-// justify-content: center;
-// align-items: center;
+	position: relative;
+	display: flex;
 
+	height: 82%;
+
+	align-items: center;
 }
 
 .headerTitle {
@@ -18,28 +15,24 @@ position: relative;
 	font-family: 'Tinos', serif;
 	font-size: 50px;
 	font-weight: 400;
-	// text-align: center;
-	// position: absolute;
-	left: 0;
-	margin-top: 230px;
+
 	display: flex;
-flex-direction: column;
-width: 500px;
-height: 250px;
-justify-content: center;
-align-items: center;
-gap: 10px;
- Button {
-margin: 0;
-margin-top: 20px;
- }
+	flex-direction: column;
+	width: 500px;
+	height: 250px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	Button {
+		margin: 0;
+		margin-top: 20px;
+	}
 }
 .headerSubtitle {
 	color: #d67e35;
 	font-family: 'Tinos', serif;
 	font-size: 80px;
 	font-weight: 400;
-	
 }
 
 .headerSuptitle {
@@ -66,4 +59,25 @@ margin-top: 20px;
 		height: 2px;
 		background-color: #c4c4c4;
 	}
+}
+
+@media (max-width: 785px) {
+.headerTitle {
+font-size: 30px;
+
+	.headerSubtitle {
+font-size: 40px;
+	}
+
+	.headerSuptitle {
+font-size: 15px;
+&::after{
+	display: none;
+}
+&::before {
+	display: none;
+}
+	}
+}
+
 }
