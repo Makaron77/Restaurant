@@ -74,7 +74,6 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  min-height: 770px;
   width: 50%;
 }
 .historyAndImagesContainer .historyImg .img {
@@ -93,6 +92,9 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .historyAndImagesContainer .historyImg .img {
+    padding-bottom: 50px;
   }
 }
 @media (max-width: 700px) {

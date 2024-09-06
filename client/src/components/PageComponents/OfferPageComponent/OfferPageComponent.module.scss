@@ -1,0 +1,51 @@
+.container {
+	padding: 0 10%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	// flex-wrap: wrap;
+	.left {
+		display: flex;
+flex-direction: column;
+gap:20px ;
+
+		.title {
+			color: #d67e34;
+			font-family: 'Tinos', serif;
+			font-size: 52px;
+			// text-align: center;
+		}
+		.text {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 24px;
+			font-weight: 700;
+			// text-align: center;
+		}
+	}
+	.right {
+		align-items: center;
+		Button {
+			margin: 0;
+		}
+	}
+}
+
+
+@media (max-width: 900px) {
+	.container {
+		justify-content: center;
+flex-wrap: wrap;
+.left {
+.title {
+			font-size: 30px;
+			text-align: center;
+		}
+		.text{
+			text-align: center;
+		}
+}
+		
+		
+	}
+}

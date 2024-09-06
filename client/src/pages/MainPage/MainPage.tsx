@@ -4,6 +4,7 @@ import NavBar from '../../components/NavBar/NavBar';
 import MainComponent from '../../components/PageComponents/WelcomePageComponents/MainComponent/MainComponent';
 import HeaderHistoryComponent from '../../components/PageComponents/HistoryPageComponents/HeaderHistoryComponent/HeaderHistoryComponent';
 import MainHistoryComponent from '../../components/PageComponents/HistoryPageComponents/MainHistoryComponent/MainHistoryComponent';
+import OfferPageComponent from '../../components/PageComponents/OfferPageComponent/OfferPageComponent';
 
 export default function MainPage() {
 	return (
@@ -19,6 +20,9 @@ export default function MainPage() {
 				<HeaderHistoryComponent />
 
 				<MainHistoryComponent />
+			</div>
+			<div className='container__offer'>
+				<OfferPageComponent />
 			</div>
 		</div>
 	);

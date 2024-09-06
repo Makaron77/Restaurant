@@ -62,7 +62,7 @@
 		display: flex;
 		align-items: center;
 		justify-content:flex-end;
-		min-height: 770px;
+		// min-height: 770px;
 		width: 50%;
 		.img {
 			width: 540px;
@@ -79,6 +79,7 @@
 		.historyImg {
 			justify-content: center;
 			.img {
+				padding-bottom: 50px;
 				// width: 290px;
 				// height: 260px;
 			}

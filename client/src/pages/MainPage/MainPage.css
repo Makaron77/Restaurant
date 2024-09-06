@@ -19,3 +19,9 @@
 .container__history {
   padding: 0 10%;
 }
+
+.container__offer {
+  background-image: url("/images/bg-offer.jpg");
+  background-size: cover;
+  height: 357px;
+}
