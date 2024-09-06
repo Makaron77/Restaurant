@@ -3,6 +3,7 @@ import './MainPage.scss';
 import NavBar from '../../components/NavBar/NavBar';
 import MainComponent from '../../components/PageComponents/WelcomePageComponents/MainComponent/MainComponent';
 import HeaderHistoryComponent from '../../components/PageComponents/HistoryPageComponents/HeaderHistoryComponent/HeaderHistoryComponent';
+import MainHistoryComponent from '../../components/PageComponents/HistoryPageComponents/MainHistoryComponent/MainHistoryComponent';
 
 export default function MainPage() {
 	return (
@@ -16,6 +17,8 @@ export default function MainPage() {
 
 			<div className='container__history'>
 				<HeaderHistoryComponent />
+
+				<MainHistoryComponent />
 			</div>
 		</div>
 	);

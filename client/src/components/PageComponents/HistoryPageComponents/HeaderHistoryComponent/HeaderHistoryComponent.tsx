@@ -30,6 +30,13 @@ export default function HeaderHistoryComponent() {
 количества. Качество
 всегда на высоте!`,
 		},
+		{
+			id: 4,
+			img: '/images/поднос.svg',
+			title: 'Непревзойденный',
+			title1: ' Вкус',
+			text: `Наши блюда отличаются исключительным качеством и насыщенным вкусом, благодаря отборным ингредиентам.`,
+		},
 	];
 	return (
 		<div className={styles.container}>
