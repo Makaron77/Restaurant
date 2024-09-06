@@ -1,5 +1,4 @@
 .container {
-
 	height: 100%;
 }
 
@@ -16,11 +15,16 @@
 .container__welcome {
 	padding: 0 10%;
 	height: 100%;
-	 
 }
 
 .container__history {
 	padding: 0 10%;
+}
+
+.container__offer {
+	background-image: url('/images/bg-offer.jpg');
+	background-size: cover;
+	height: 357px;
 	
-	
+
 }

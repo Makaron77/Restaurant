@@ -145,7 +145,7 @@
     display: none;
   }
   .nav__btn {
-    display: none;
+    display: none !important;
   }
   .nav__contacts--svg {
     display: none;

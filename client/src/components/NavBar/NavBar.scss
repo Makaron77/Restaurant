@@ -142,6 +142,12 @@
 	}
 }
 
+//  	@media (max-width: 785px) {
+	
+// 		display: none;
+	
+// }
+
 @media (max-width: 785px) {
 .nav__btn {
 	display: none;
@@ -160,13 +166,14 @@
 	}
 
 	.nav__btn {
-		display: none;
+		display: none !important;
 	}
 
 	.nav__contacts--svg {
 		display: none;
 	}
 }
+
 
 @media (max-width: 480px) {
 }
