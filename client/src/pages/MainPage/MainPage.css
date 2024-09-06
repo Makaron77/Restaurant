@@ -12,6 +12,10 @@
 }
 
 .container__welcome {
-  margin: 0 10%;
+  padding: 0 10%;
   height: 100%;
+}
+
+.container__history {
+  padding: 0 10%;
 }

@@ -1,12 +1,8 @@
 .container {
-  margin: 0 10%;
-  margin-top: -50px;
-  position: relative;
+  margin-top: -100px;
 }
 
 .header {
-  position: absolute;
-  top: -60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,8 +10,8 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 20px;
-  width: 100%;
-  height: 330px;
+  width: auto;
+  height: auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -52,10 +48,10 @@
 }
 .card .title {
   margin-bottom: 20px;
-  color: #2C2C2C;
+  color: #2c2c2c;
 }
 .card .title .highlight {
-  color: #BC9060;
+  color: #bc9060;
 }
 .card .text {
   text-align: center;
@@ -69,5 +65,10 @@
         -ms-flex-pack: center;
             justify-content: center;
     gap: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .text {
+    font-size: 22px;
   }
 }
