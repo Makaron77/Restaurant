@@ -25,3 +25,7 @@
   background-size: cover;
   height: 357px;
 }
+
+.container__dishes {
+  padding: 0 10%;
+}

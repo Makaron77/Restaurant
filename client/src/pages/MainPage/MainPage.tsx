@@ -5,6 +5,7 @@ import MainComponent from '../../components/PageComponents/WelcomePageComponents
 import HeaderHistoryComponent from '../../components/PageComponents/HistoryPageComponents/HeaderHistoryComponent/HeaderHistoryComponent';
 import MainHistoryComponent from '../../components/PageComponents/HistoryPageComponents/MainHistoryComponent/MainHistoryComponent';
 import OfferPageComponent from '../../components/PageComponents/OfferPageComponent/OfferPageComponent';
+import DishesPageComponent from '../../components/PageComponents/DishesPageComponent/DishesPageComponent';
 
 export default function MainPage() {
 	return (
@@ -23,6 +24,9 @@ export default function MainPage() {
 			</div>
 			<div className='container__offer'>
 				<OfferPageComponent />
+			</div>
+			<div className='container__dishes'>
+				<DishesPageComponent/>
 			</div>
 		</div>
 	);
