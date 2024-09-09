@@ -6,6 +6,8 @@ import HeaderHistoryComponent from '../../components/PageComponents/HistoryPageC
 import MainHistoryComponent from '../../components/PageComponents/HistoryPageComponents/MainHistoryComponent/MainHistoryComponent';
 import OfferPageComponent from '../../components/PageComponents/OfferPageComponent/OfferPageComponent';
 import DishesPageComponent from '../../components/PageComponents/DishesPageComponent/DishesPageComponent';
+import MenuPageComponent from '../../components/PageComponents/MenuPageComponent/MenuPageComponent'
+import CarouselComponent from '../../components/Carousel/CarouselComponent';
 
 export default function MainPage() {
 	return (
@@ -26,8 +28,13 @@ export default function MainPage() {
 				<OfferPageComponent />
 			</div>
 			<div className='container__dishes'>
-				<DishesPageComponent/>
+				<DishesPageComponent />
 			</div>
+			<div className='container__menu'>
+				<MenuPageComponent />
+			</div>
+
+			
 		</div>
 	);
 }
