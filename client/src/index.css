@@ -1,3 +1,52 @@
-*{
+* {
 	color: #fff;
+}
+.menu__carousel .slick-dots {
+  bottom: 2px; 
+	/* right:  1590px; */
+
+}
+
+.menu__carousel .slick-dots li {
+  width: 12px; 
+  height: 12px; 
+}
+
+.menu__carousel .slick-dots li button {
+  background-color: #080808;
+
+}
+
+.menu__carousel .slick-dots li.slick-active button {
+  background-color: #D67E34; 
+}
+
+
+.menu__carousel .slick-prev::after {
+	width: 17px;
+	height: 17px;
+	left: -4px;
+}
+
+.menu__carousel .slick-next::after {
+	width: 17px;
+	height: 17px;
+}
+
+.menu__carousel .slick-prev {
+	color: black;
+	
+}
+.menu__carousel .slick-prev:hover {
+	color: #d67e34;
+}
+
+.menu__carousel .slick-next {
+	color: black !important;
+
+	/* left: 275px; */
+}
+
+.menu__carousel .slick-next:hover {
+	color: #d67e34 !important;
 }

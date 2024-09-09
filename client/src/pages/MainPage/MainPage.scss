@@ -36,3 +36,13 @@
 	padding: 0;
 }
 }
+
+.container__menu {
+	background-image: url('/images/bg_menu.jpg');
+	background-size: cover;
+	// background-repeat: no repeat;
+
+	min-height: 1030px;
+
+	background-position: center ;
+}
