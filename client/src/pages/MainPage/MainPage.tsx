@@ -9,6 +9,7 @@ import DishesPageComponent from '../../components/PageComponents/DishesPageCompo
 import MenuPageComponent from '../../components/PageComponents/MenuPageComponent/MenuPageComponent'
 import CarouselComponent from '../../components/Carousel/CarouselComponent';
 import CommentPageComponent from '../../components/PageComponents/CommentPageComponent/CommentPageComponent';
+import GalleryPageComponent from '../../components/PageComponents/GalleryPageComponent/GalleryPageComponent';
 
 export default function MainPage() {
 	return (
@@ -35,8 +36,13 @@ export default function MainPage() {
 				<MenuPageComponent />
 			</div>
 
-			<div className='container__comments'></div>
-			<CommentPageComponent/>
+			<div className='container__comments'>
+				<CommentPageComponent />
+			</div>
+
+			<div className='container__gallery'>
+				<GalleryPageComponent/>
+			</div>
 		</div>
 	);
 }
