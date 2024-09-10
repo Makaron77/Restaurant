@@ -30,7 +30,7 @@
 }
 
 .container__dishes {
-	padding: 0 10%;
+	padding: 0% 10%;
 
 @media (max-width: 700px) {
 	padding: 0;
@@ -50,4 +50,8 @@
 .container__comments {
 
 
+}
+
+.container__gallery {
+		padding: 5% 10%;
 }
