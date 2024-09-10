@@ -1,48 +1,32 @@
 .contentStyle {
-	// display: flex;
-	// justify-content: center;
-	// height: 160px;
-	// line-height: 160px;
-	color: black;
-	max-width: 300px !important;
-	
-	// text-align: center;
-	background: #da1313;
-
 }
 
 .menu__carousel {
-// position: relative !important;
+	.card {
+		background-color: #fff;
+		display: flex !important;
 
-		.card {
-			background-color: #fff;
-			display: flex !important;
-			
-			flex-direction: column !important;
-			align-items: center !important;
-			text-align: center !important;
-			gap: 20px;
-			padding: 12% 0 10%;
-			
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 20px;
+		padding: 12% 0 10%;
 
-			img {
-			}
-			.title {
-				font-family: 'Tinos', serif;
-				font-size: 26px;
-				color: black;
-			}
-			.text {
-					font-family: 'Open Sans', sans-serif;
-				color: black;
-				max-width: 170px ;
-				line-height: 25px ;
-			}
-
+		img {
 		}
+		.title {
+			font-family: 'Tinos', serif;
+			font-size: 26px;
+			color: black;
+		}
+		.text {
+			font-family: 'Open Sans', sans-serif;
+			color: black;
+			max-width: 170px;
+			line-height: 25px;
+		}
+	}
 }
 
 @media (max-width: 480px) {
-
 }
-

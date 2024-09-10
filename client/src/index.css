@@ -1,26 +1,25 @@
 * {
 	color: #fff;
 }
-.menu__carousel .slick-dots {
-  bottom: 2px; 
-	/* right:  1590px; */
 
+/** меню карусель **/
+.menu__carousel .slick-dots {
+	bottom: 2px;
+	/* right:  1590px; */
 }
 
 .menu__carousel .slick-dots li {
-  width: 12px; 
-  height: 12px; 
+	width: 12px;
+	height: 12px;
 }
 
 .menu__carousel .slick-dots li button {
-  background-color: #080808;
-
+	background-color: #080808;
 }
 
 .menu__carousel .slick-dots li.slick-active button {
-  background-color: #D67E34; 
+	background-color: #d67e34;
 }
-
 
 .menu__carousel .slick-prev::after {
 	width: 17px;
@@ -35,7 +34,6 @@
 
 .menu__carousel .slick-prev {
 	color: black;
-	
 }
 .menu__carousel .slick-prev:hover {
 	color: #d67e34;
@@ -50,3 +48,36 @@
 .menu__carousel .slick-next:hover {
 	color: #d67e34 !important;
 }
+/** меню карусель **/
+
+/** коммент карусель **/
+
+.comment__carousel .slick-dots {
+	/* bottom: 90px; */
+
+	padding-top: 30px;
+	
+;
+}
+
+.comment__carousel .slick-dots li {
+	width: 10px;
+	height: 10px;
+
+}
+
+.comment__carousel .slick-dots li button {
+	background-color: #080808;
+
+
+}
+
+.comment__carousel .slick-dots li.slick-active {
+	margin-inline: 0 !important;
+}
+
+.comment__carousel .slick-dots li.slick-active button {
+	background-color: #d67e34;
+	
+}
+/** коммент карусель **/
