@@ -1,5 +1,5 @@
-import React, { Children } from 'react'
-import styles from './Button.module.scss'
+import React from 'react';
+import styles from './Button.module.scss';
 
 interface ButtonProps {
 	children: React.ReactNode;
@@ -16,7 +16,6 @@ export default function Button({
 }: ButtonProps) {
 	return (
 		<button
-	
 			className={`${styles.btn} ${styles[`btn--${size}`]} ${className}`}
 			onClick={onClick}
 		>

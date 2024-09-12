@@ -1,28 +1,9 @@
 import React from 'react';
 import { Carousel } from 'antd';
 import styles from './Carousel.module.scss';
-import Button from '../Buttons/Button/Button';
+import Button from '../../../Buttons/Button/Button.js';
 
-const cards = [
-	{
-		id: 1,
-		img: '/images/big_burger.png',
-		title: 'Гамбургер макси',
-		text: 'Максимально толстый слой мяса',
-	},
-	{
-		id: 2,
-		img: '/images/big_burger.png',
-		title: 'Чизбургер макси',
-		text: 'Максимально толстый слой мяса',
-	},
-	{
-		id: 3,
-		img: '/images/big_burger.png',
-		title: 'Биг-мак макси',
-		text: 'Максимально толстый слой мяса',
-	},
-];
+import cards from '../menuCarouselData.ts';
 
 const CarouselComponent: React.FC = () => (
 	<Carousel

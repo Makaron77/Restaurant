@@ -55,3 +55,11 @@
 .container__gallery {
 		padding: 5% 10%;
 }
+
+.container__footer {
+	color: black;
+	height: 100vh;
+	background-image: url('/images/bg-bottom.jpg');
+	background-size: cover;
+	background-position:center;
+}
