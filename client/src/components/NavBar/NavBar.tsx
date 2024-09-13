@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './NavBar.scss';
 import Button from '../Buttons/Button/Button';
-import navData from './navData.js';
+import navData from './navData.ts';
 import BurgerMenuComponent from './BurgerMenuComponent/BurgerMenuComponent.js';
+import ReserveComponentMenu from '../ReserveComponentMenu/ReserveComponentMenu.tsx';
+import { UserContext } from '../../context/context.tsx';
+
 export default function NavBar() {
 	const [menuActive, setMenuActive] = useState(false);
+
+	const { reserveActiveMenu, setReserveActiveMenu } = useContext(UserContext);
 	return (
 		<div className='nav'>
 			<div className='nav__logo'>
@@ -61,7 +66,16 @@ export default function NavBar() {
 					Свяжитесь с нами для бронирования
 				</div>
 			</div>
-			<Button className='nav__btn'>ЗАКАЗ СТОЛИКА</Button>
+			<Button
+				className='nav__btn'
+				onClick={() => setReserveActiveMenu(!reserveActiveMenu)}
+			>
+				ЗАКАЗ СТОЛИКА
+			</Button>
+
+			<ReserveComponentMenu
+				
+			/>
 
 			<div
 				onClick={() => setMenuActive(!menuActive)}
