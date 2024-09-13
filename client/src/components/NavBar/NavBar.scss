@@ -110,7 +110,6 @@
 
 	.nav__burgerMenu--svg rect {
 		fill: #ff7400;
-		
 	}
 }
 
@@ -143,14 +142,12 @@
 }
 
 @media (max-width: 785px) {
-	.nav__btn {
-		display: none;
+	.burger__component {
+		display: block;
 	}
-.burger__component {
-	display: block;
-}
 	.nav__burgerMenu {
 		display: block;
+		padding-left: 40px;
 	}
 
 	.nav__list {
@@ -159,10 +156,6 @@
 
 	.nav__basket {
 		display: none;
-	}
-
-	.nav__btn {
-		display: none !important;
 	}
 
 	.nav__contacts--svg {

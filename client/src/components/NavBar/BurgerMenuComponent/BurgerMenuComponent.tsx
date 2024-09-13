@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './BurgerMenuComponent.module.scss';
-import navData from '../navData.js';
-export default function ({ active, setActive }) {
+import navData from '../navData.ts';
+import { UserContext } from '../../../context/context.tsx';
+
+const BurgerMenuComponent = ({ active, setActive }) => {
+	const { reserveActiveMenu, setReserveActiveMenu } = useContext(UserContext);
+	
+const handleReserveClick = () => {
+    setActive(!active);
+    setReserveActiveMenu(!reserveActiveMenu);
+  };
+
 	return (
 		<div
 			className={`${styles.menu} ${active ? styles.active : ''}`}
@@ -9,11 +18,17 @@ export default function ({ active, setActive }) {
 		>
 			<div className={styles.menuContent} onClick={e => e.stopPropagation()}>
 				<div className={styles.list}>
-					{navData.map((item, i) => (
-						<a key={i} href={item.href}>
-							{item.label}
-						</a>
-					))}
+					{navData.map((item, i) =>
+						item.href === '#reserve' ? (
+							<a href={item.href} onClick={handleReserveClick}>
+								{item.label}
+							</a>
+						) : (
+							<a key={i} href={item.href}>
+								{item.label}
+							</a>
+						),
+					)}
 				</div>
 				<svg
 					className={styles.svg}
@@ -30,15 +45,12 @@ export default function ({ active, setActive }) {
 						fill='none'
 						stroke='none'
 					>
-						<path
-							d='M202 578 c-22 -22 -12 -43 60 -115 l72 -73 -72 -73 c-72 -72 -82 -93
--60 -115 22 -22 43 -12 115 60 l73 72 73 -72 c72 -72 93 -82 115 -60 22 22 12
-43 -60 115 l-72 73 72 73 c72 72 82 93 60 115 -22 22 -43 12 -115 -60 l-73
--72 -73 72 c-72 72 -93 82 -115 60z'
-						/>
+						<path d='M202 578 c-22 -22 -12 -43 60 -115 l72 -73 -72 -73 c-72 -72 -82 -93 -60 -115 22 -22 43 -12 115 60 l73 72 73 -72 c72 -72 93 -82 115 -60 22 22 12 43 -60 115 l-72 73 72 73 c72 72 82 93 60 115 -22 22 -43 12 -115 -60 l-73 -72 -73 72 c-72 72 -93 82 -115 60z' />
 					</g>
 				</svg>
 			</div>
 		</div>
 	);
-}
+};
+
+export default BurgerMenuComponent;

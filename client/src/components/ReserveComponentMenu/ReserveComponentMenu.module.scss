@@ -1,0 +1,146 @@
+.menu {
+	position: fixed;
+	right: 0;
+	top: 0;
+
+	font-family: 'Open Sans', sans-serif;
+	backdrop-filter: blur(3px);
+	height: 100vh;
+	width: 100%;
+	z-index: 1;
+	transform: translate(100%);
+	transition-duration: 0.4s;
+	&.active {
+		transform: translate(0);
+	}
+
+	.menuContent {
+		padding: 80px 50px;
+		position: fixed;
+		right: 0;
+		height: 100vh;
+		// width: 25%;
+		width: 480px;
+		background-color: #fff;
+		display: flex;
+		flex-direction: column;
+
+		gap: 5%;
+		.header {
+			display: flex;
+			justify-content: center;
+			color: black;
+			font-weight: 600;
+			font-size: 18px;
+		}
+		.inputs {
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+
+			input {
+				font-family: 'Open Sans', sans-serif;
+				box-sizing: border-box;
+				width: 100%;
+				height: 36px;
+				border: none;
+				border-bottom: 1px solid #eaeced;
+
+				&::placeholder {
+					font-size: 14px;
+					color: #666;
+					opacity: 1;
+					transition: opacity 0.3s ease;
+				}
+				&:focus::placeholder {
+					opacity: 0;
+				}
+			}
+			button {
+				font-family: 'Open Sans', sans-serif;
+				font-size: 18px;
+				margin-top: 10px;
+				height: 49px;
+				width: 100%;
+				border-radius: 0;
+				border: solid 2px black;
+				font-weight: 600;
+				background-color: white;
+				transition-duration: 0.2s;
+				margin-top: 40px;
+				&:hover {
+					background-color: #d67e34;
+					border-color: #d67e34;
+					color: white;
+				}
+				&:active {
+					transform: scale(0.99);
+				}
+			}
+
+			.calendar {
+			}
+		}
+		.svg {
+			position: absolute;
+			top: 5px;
+			right: 5px;
+			path {
+				// width: 10px ;
+				// height: 10px;
+				fill: black;
+			}
+		}
+	}
+	.todo {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		p {
+			line-height: 2;
+			color: #666;
+			a {
+				text-decoration: none;
+				color: #5e8cfb;
+			}
+		}
+	}
+}
+
+@media (max-width: 1500px) {
+	.menu {
+		.menuContent {
+			padding: 80px 25px;
+			width: 360px;
+			.inputs {
+				// align-items: center;
+
+				button {
+				margin-top: 20px;
+				height: 55px;
+			}
+			}
+		
+		}
+	}
+}
+@media (max-width: 1050px) {
+
+	.menu {
+		.menuContent{
+			.header{
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+@media (max-width: 470px) {
+	.menu {
+		.menuContent{
+			width: auto;
+		
+		}
+	}
+}
