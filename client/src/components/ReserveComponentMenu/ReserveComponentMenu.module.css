@@ -1,0 +1,191 @@
+.menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  font-family: "Open Sans", sans-serif;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  -webkit-transform: translate(100%);
+      -ms-transform: translate(100%);
+          transform: translate(100%);
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+.menu.active {
+  -webkit-transform: translate(0);
+      -ms-transform: translate(0);
+          transform: translate(0);
+}
+.menu .menuContent {
+  padding: 80px 50px;
+  position: fixed;
+  right: 0;
+  height: 100vh;
+  width: 480px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: -5px 0px 23px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: -5px 0px 23px 0px rgba(0, 0, 0, 0.1);
+  gap: 5%;
+}
+.menu .menuContent .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+}
+.menu .menuContent .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+.menu .menuContent .inputs input {
+  font-family: "Open Sans", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 36px;
+  border: none;
+  border-bottom: 1px solid #eaeced;
+}
+.menu .menuContent .inputs input::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #666;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.menu .menuContent .inputs input::-moz-placeholder {
+  font-size: 14px;
+  color: #666;
+  opacity: 1;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.menu .menuContent .inputs input:-ms-input-placeholder {
+  font-size: 14px;
+  color: #666;
+  opacity: 1;
+  -ms-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.menu .menuContent .inputs input::-ms-input-placeholder {
+  font-size: 14px;
+  color: #666;
+  opacity: 1;
+  -ms-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.menu .menuContent .inputs input::placeholder {
+  font-size: 14px;
+  color: #666;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.menu .menuContent .inputs input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+.menu .menuContent .inputs input:focus::-moz-placeholder {
+  opacity: 0;
+}
+.menu .menuContent .inputs input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+.menu .menuContent .inputs input:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+.menu .menuContent .inputs input:focus::placeholder {
+  opacity: 0;
+}
+.menu .menuContent .inputs .btn {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  margin-top: 10px;
+  height: 49px;
+  width: 100%;
+  border-radius: 0;
+  border: solid 2px black;
+  font-weight: 600;
+  background-color: white;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  margin-top: 40px;
+}
+.menu .menuContent .inputs .btn:hover {
+  background-color: #d67e34;
+  border-color: #d67e34;
+  color: white;
+}
+.menu .menuContent .inputs .btn:active {
+  -webkit-transform: scale(0.99);
+      -ms-transform: scale(0.99);
+          transform: scale(0.99);
+}
+.menu .menuContent .svg {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.menu .menuContent .svg path {
+  fill: black;
+}
+.menu .todo {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+.menu .todo p {
+  line-height: 2;
+  color: #666;
+}
+.menu .todo p a {
+  text-decoration: none;
+  color: #5e8cfb;
+}
+
+@media (max-width: 1500px) {
+  .menu .menuContent {
+    padding: 80px 25px;
+    width: 360px;
+  }
+  .menu .menuContent .inputs button {
+    margin-top: 20px;
+    height: 55px;
+  }
+}
+@media (max-width: 1050px) {
+  .menu .menuContent .header {
+    font-size: 14px;
+  }
+}
+@media (max-width: 470px) {
+  .menu .menuContent {
+    width: auto;
+  }
+}

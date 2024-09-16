@@ -1,13 +1,14 @@
 .container {
-	padding: 0 10%;
+	// padding: 0 10%;
 	color: black;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	gap: 50px;
 
 	
 	.header {
-		color: #fff;
+		color: #FF7400;
 		display: flex;
 		justify-content: center;
 		padding-top: 10%;

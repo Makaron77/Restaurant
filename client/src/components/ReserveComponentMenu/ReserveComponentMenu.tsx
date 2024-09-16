@@ -62,7 +62,7 @@ export default function ReserveComponentMenu() {
 						placeholder='Комментарий'
 						className={styles.comment}
 					/>
-					<button>ОТПРАВИТЬ</button>
+					<button className={styles.btn}>ОТПРАВИТЬ</button>
 				</div>
 				<div className={styles.todo}>
 					<p>
