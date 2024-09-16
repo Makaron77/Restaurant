@@ -24,6 +24,7 @@
 		background-color: #fff;
 		display: flex;
 		flex-direction: column;
+		box-shadow: -5px 0px 23px 0px rgba(0,0,0,0.10);
 
 		gap: 5%;
 		.header {
@@ -56,7 +57,7 @@
 					opacity: 0;
 				}
 			}
-			button {
+			.btn {
 				font-family: 'Open Sans', sans-serif;
 				font-size: 18px;
 				margin-top: 10px;

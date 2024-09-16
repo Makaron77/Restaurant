@@ -10,6 +10,7 @@ import MenuPageComponent from '../../components/PageComponents/MenuPageComponent
 import CarouselComponent from '../../components/PageComponents/MenuPageComponent/Carousel/CarouselComponent';
 import CommentPageComponent from '../../components/PageComponents/CommentPageComponent/CommentPageComponent';
 import GalleryPageComponent from '../../components/PageComponents/GalleryPageComponent/GalleryPageComponent';
+import BookMenu from '../../components/BookMenu/BookMenu';
 
 export default function MainPage() {
 	const menuRef = useRef<HTMLDivElement>(null);
@@ -23,8 +24,8 @@ export default function MainPage() {
 	return (
 		<div className='container'>
 			<div className='background'>
+				<NavBar />
 				<div className='container__welcome'>
-					<NavBar />
 					<MainComponent scrollToMenu={scrollToMenu} />
 				</div>
 			</div>
@@ -51,6 +52,9 @@ export default function MainPage() {
 				<GalleryPageComponent />
 			</div>
 			<div className='container__footer'></div>
+			<div className='container__book'>
+				<BookMenu />
+			</div>
 		</div>
 	);
 }

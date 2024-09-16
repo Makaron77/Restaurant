@@ -27,5 +27,29 @@
 }
 
 .container__dishes {
-  padding: 0 10%;
+  padding: 0% 10%;
+}
+@media (max-width: 700px) {
+  .container__dishes {
+    padding: 0;
+  }
+}
+
+.container__menu {
+  background-image: url("/images/bg_menu.jpg");
+  background-size: cover;
+  min-height: 1030px;
+  background-position: center;
+}
+
+.container__gallery {
+  padding: 5% 10%;
+}
+
+.container__footer {
+  color: black;
+  height: 100vh;
+  background-image: url("/images/bg-bottom.jpg");
+  background-size: cover;
+  background-position: center;
 }

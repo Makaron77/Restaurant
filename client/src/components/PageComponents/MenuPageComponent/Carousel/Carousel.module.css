@@ -1,0 +1,27 @@
+.menu__carousel .card {
+  background-color: #fff;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 12% 0 10%;
+}
+.menu__carousel .card .title {
+  font-family: "Tinos", serif;
+  font-size: 26px;
+  color: black;
+}
+.menu__carousel .card .text {
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  max-width: 170px;
+  line-height: 25px;
+}

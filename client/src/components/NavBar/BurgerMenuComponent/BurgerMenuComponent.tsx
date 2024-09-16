@@ -20,7 +20,7 @@ const handleReserveClick = () => {
 				<div className={styles.list}>
 					{navData.map((item, i) =>
 						item.href === '#reserve' ? (
-							<a href={item.href} onClick={handleReserveClick}>
+							<a key={i} href={item.href} onClick={handleReserveClick}>
 								{item.label}
 							</a>
 						) : (
@@ -29,6 +29,11 @@ const handleReserveClick = () => {
 							</a>
 						),
 					)}
+				</div>
+				<div className={styles.contacts}>
+					<p>г.Москва, ул.Пушкина, 77 стр.7</p>
+					<p>+7(777)777-77-77</p>
+					<p>dom-edi@gmail.com</p>
 				</div>
 				<svg
 					className={styles.svg}
