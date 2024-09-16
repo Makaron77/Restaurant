@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './MainHistoryComponent.module.scss';
+import { UserContext } from '../../../../context/context';
 
 export default function MainHistoryComponent() {
+	const { registerRef } = useContext(UserContext);
+
 	return (
-		<div className={styles.historyAndImagesContainer}>
+		<div
+			className={styles.historyAndImagesContainer}
+			ref={ref => registerRef('#we', ref)}
+		>
 			<div className={styles.history}>
 				<div className={styles.historyContainer}>
 					<p className={styles.title}>
@@ -37,9 +43,7 @@ export default function MainHistoryComponent() {
 			</div>
 
 			<div className={styles.historyImg}>
-	
 				<img className={styles.img} src='images/imagesALL.jpg' alt='img2' />
-			
 			</div>
 		</div>
 	);

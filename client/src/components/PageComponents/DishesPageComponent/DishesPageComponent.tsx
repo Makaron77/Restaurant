@@ -7,7 +7,7 @@ export default function DishesPageComponent() {
 	return (
 		<div className={styles.container}>
 			<p className={styles.header}>
-				Наши<span>Блюда</span>
+				Наши<span>Новинки</span>
 			</p>
 
 			<div className={styles.main}>
