@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useContext, useRef } from 'react';
 import './MainPage.scss';
 import NavBar from '../../components/NavBar/NavBar';
 import MainComponent from '../../components/PageComponents/WelcomePageComponents/MainComponent/MainComponent';
@@ -7,26 +7,22 @@ import MainHistoryComponent from '../../components/PageComponents/HistoryPageCom
 import OfferPageComponent from '../../components/PageComponents/OfferPageComponent/OfferPageComponent';
 import DishesPageComponent from '../../components/PageComponents/DishesPageComponent/DishesPageComponent';
 import MenuPageComponent from '../../components/PageComponents/MenuPageComponent/MenuPageComponent';
-import CarouselComponent from '../../components/PageComponents/MenuPageComponent/Carousel/CarouselComponent';
 import CommentPageComponent from '../../components/PageComponents/CommentPageComponent/CommentPageComponent';
 import GalleryPageComponent from '../../components/PageComponents/GalleryPageComponent/GalleryPageComponent';
-import BookMenu from '../../components/BookMenu/BookMenu';
+import { UserContext } from '../../context/context';
 
 export default function MainPage() {
-	const menuRef = useRef<HTMLDivElement>(null);
-
-	const scrollToMenu = () => {
-		if (menuRef.current) {
-			menuRef.current.scrollIntoView({ behavior: 'smooth' });
-		}
-	};
+	const { registerRef } = useContext(UserContext);
 
 	return (
 		<div className='container'>
 			<div className='background'>
 				<NavBar />
-				<div className='container__welcome'>
-					<MainComponent scrollToMenu={scrollToMenu} />
+				<div
+					className='container__welcome'
+					ref={ref => registerRef('#home', ref)}
+				>
+					<MainComponent />
 				</div>
 			</div>
 
@@ -34,27 +30,31 @@ export default function MainPage() {
 				<HeaderHistoryComponent />
 				<MainHistoryComponent />
 			</div>
+
 			<div className='container__offer'>
 				<OfferPageComponent />
 			</div>
+
 			<div className='container__dishes'>
 				<DishesPageComponent />
 			</div>
-			<div className='container__menu' ref={menuRef}>
+
+			<div className='container__menu' ref={ref => registerRef('#menu', ref)}>
 				<MenuPageComponent />
 			</div>
 
-			<div className='container__comments'>
+			<div
+				className='container__comments'
+				ref={ref => registerRef('#reviews', ref)}
+			>
 				<CommentPageComponent />
 			</div>
 
 			<div className='container__gallery'>
 				<GalleryPageComponent />
 			</div>
+
 			<div className='container__footer'></div>
-			<div className='container__book'>
-				<BookMenu />
-			</div>
 		</div>
 	);
 }

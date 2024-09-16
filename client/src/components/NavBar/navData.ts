@@ -1,7 +1,7 @@
  const navData = [
-	{ label: 'ГЛАВНАЯ', href: '#' },
-	{ label: 'МЕНЮ', href: '#' },
-	{ label: 'О НАС', href: '#' },
-	{ label: 'БРОНЬ', href: '#reserve' },
-];
+		{ label: 'ГЛАВНАЯ', href: '#home' },
+		{ label: 'МЕНЮ', href: '#menu' },
+		{ label: 'О НАС', href: '#we' },
+		{ label: 'ОТЗЫВЫ', href: '#reviews' },
+ ];
 export default navData

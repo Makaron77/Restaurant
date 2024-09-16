@@ -10,7 +10,7 @@ export default function MenuPageComponent() {
 		<div className={styles.container}>
 			<div className={styles.header}>Наше меню</div>
 
-			{/* <BookMenu /> */}
+			<BookMenu />
 
 			{/* <div className={styles.cards}>
 				{cards.map(card => (
