@@ -4,12 +4,9 @@ import navData from '../navData.ts';
 import { UserContext } from '../../../context/context.tsx';
 
 const BurgerMenuComponent = ({ active, setActive }) => {
-	const { reserveActiveMenu, setReserveActiveMenu } = useContext(UserContext);
+const { scrollTo } = useContext(UserContext);
 	
-const handleReserveClick = () => {
-    setActive(!active);
-    setReserveActiveMenu(!reserveActiveMenu);
-  };
+
 
 	return (
 		<div
@@ -18,17 +15,19 @@ const handleReserveClick = () => {
 		>
 			<div className={styles.menuContent} onClick={e => e.stopPropagation()}>
 				<div className={styles.list}>
-					{navData.map((item, i) =>
-						item.href === '#reserve' ? (
-							<a key={i} href={item.href} onClick={handleReserveClick}>
-								{item.label}
-							</a>
-						) : (
-							<a key={i} href={item.href}>
-								{item.label}
-							</a>
-						),
-					)}
+					{navData.map((item, i) => (
+						<a
+							key={i}
+							href={item.href}
+							onClick={() => {
+								scrollTo(item.href);
+								setActive(false);
+							}}
+					
+						>
+							{item.label}
+						</a>
+					))}
 				</div>
 				<div className={styles.contacts}>
 					<p>г.Москва, ул.Пушкина, 77 стр.7</p>

@@ -9,9 +9,10 @@ import { UserContext } from '../../context/context.tsx';
 export default function NavBar() {
 	const [menuActive, setMenuActive] = useState(false);
 	// const [scrolled, setScrolled] = useState(false);
-	const { reserveActiveMenu, setReserveActiveMenu } = useContext(UserContext);
+	const { reserveActiveMenu, setReserveActiveMenu, scrollTo } =
+		useContext(UserContext);
 	const [scrolled, setScrolled] = useState(false);
-	const { scrollTo } = useContext(UserContext);
+	
 
 	useEffect(() => {
 		const handleScroll = () => {
