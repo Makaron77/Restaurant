@@ -117,6 +117,15 @@
 .menu .menuContent .inputs input:focus::placeholder {
   opacity: 0;
 }
+.menu .menuContent .inputs .calendar fieldset {
+  border-style: none;
+}
+.menu .menuContent .inputs .calendar label {
+  display: none;
+}
+.menu .menuContent .inputs .calendar .textField {
+  width: 100%;
+}
 .menu .menuContent .inputs .btn {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;

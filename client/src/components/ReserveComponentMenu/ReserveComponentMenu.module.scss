@@ -57,6 +57,23 @@
 					opacity: 0;
 				}
 			}
+.calendar {
+	fieldset {
+		border-style: none;
+	}
+	label {
+		display: none;
+	}
+	input {
+		
+	}
+  .textField {
+		width: 100%;
+  .MuiInputBase-root {
+		
+	}
+}
+}
 			.btn {
 				font-family: 'Open Sans', sans-serif;
 				font-size: 18px;
@@ -79,8 +96,7 @@
 				}
 			}
 
-			.calendar {
-			}
+			
 		}
 		.svg {
 			position: absolute;
