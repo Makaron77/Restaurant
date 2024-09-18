@@ -9,6 +9,14 @@
 <br/> 
 ![image](https://github.com/user-attachments/assets/d5472713-a24e-45af-bda8-19df4385db69)
 
+Инструкция по запуску проекта локально: 
+  - Клонируем репозиторий
+  - перейти в папку с проектом cd Restaurant/client
+  - установи зависимости npm i
+  - запусти npm run dev
 
+Чтобы изменить почту на которую будет приходить данные с бронирования столика:
+перейти в файл - formHandlers.ts и выполнить инструкцию.
+![image](https://github.com/user-attachments/assets/6a702e46-b22d-41cf-a6b8-c6eae668dd75)
 
 
