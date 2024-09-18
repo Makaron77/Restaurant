@@ -107,7 +107,7 @@ export default function ReserveComponentMenu() {
 				<div className={styles.todo}>
 					<p>
 						Нажимая кнопку «Отправить», даю свое
-						<a href='#privacy_policy'>согласие</a> на обработку персональных
+						<a href='#privacy_policy'> согласие</a> на обработку персональных
 						данных
 					</p>
 					<p>* - Поля обязательные для заполнения</p>
