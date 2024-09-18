@@ -1,6 +1,14 @@
-Адаптивная вёрстка под пк и смартфоны.
+Адаптивная вёрстка лендинга ресторана под пк и смартфон с небольшой логикой навигации по сайту и бронирования столика, анимированным меню-книжкой, карусель отзывов и пр.
 
-![image](https://github.com/user-attachments/assets/1fe9c01a-5712-4f90-8446-08ed76385e88)
-![image](https://github.com/user-attachments/assets/8d408fbf-91fe-43b7-9fac-678ae0a1aeb1)
-![image](https://github.com/user-attachments/assets/e799e9bc-dae6-46b0-bb68-70a06c6a2721)
+Ознакомительное видео: https://youtu.be/KFRDjYg_Vx8?si=gv-MjtZejM7l8bDV
+
+![image](https://github.com/user-attachments/assets/19d97997-11b6-43eb-8c5e-44a0d020ff69)
+<br/>
+![image](https://github.com/user-attachments/assets/5849b8e7-11fa-4570-92a7-81be20242d71)
+![image](https://github.com/user-attachments/assets/28be7a35-2fb3-46f5-8c2d-b1e6f417bd67)
+<br/> 
+![image](https://github.com/user-attachments/assets/d5472713-a24e-45af-bda8-19df4385db69)
+
+
+
 
