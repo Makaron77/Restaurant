@@ -2,7 +2,7 @@
 
 [Ссылка на видео-презентацию](https://youtu.be/KFRDjYg_Vx8?si=gv-MjtZejM7l8bDV)
 <details>
-  summary>Изображение 1</summary>
+  <summary>Изображение 1</summary>
 <img src="https://github.com/user-attachments/assets/19d97997-11b6-43eb-8c5e-44a0d020ff69" alt="Изображение 1">
 </details>
 <details>
